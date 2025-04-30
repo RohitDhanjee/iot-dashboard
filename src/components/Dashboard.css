@@ -1,0 +1,211 @@
+/* .dashboard {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #3498db;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+ */
+ .dashboard {
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #bebaba86;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.download-buttons {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.download-buttons button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.download-buttons button:hover {
+    background-color: #0056b3;
+}
+.alert-box {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.chart-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: #f9f9f9;
+    
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #4b4b4b76;
+    text-align: center;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+}
+
+/* 🔹 Style the Date Picker Container */
+.date-filter {
+    margin: 10px 0;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    /* margin-bottom: 20px; */
+}
+
+.date-filter label{
+    width: 100%;
+    align-items: center;
+
+}
+
+/* 🔹 Style the Date Picker Input */
+.react-datepicker-wrapper {
+    width: 100%;
+    margin: 10px;
+}
+.fil-btn{
+    width: 100%;
+
+}
+.date-filter button{
+    /* width: 100%; */
+    padding: 10px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.date-filter button:hover{
+    background-color: #0056b3;
+}
+
+.react-datepicker__input-container input {
+    width: 150px;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.react-datepicker__input-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 🔹 Customize Calendar Popup */
+.react-datepicker {
+    font-family: "Arial", sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+    background-color: #007bff;
+    color: white;
+    border-bottom: none;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+    width: 35px;
+    line-height: 35px;
+    margin: 2px;
+}
+
+.react-datepicker__day:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+}
+
+/* 🔹 Highlight Selected Date */
+.react-datepicker__day--selected {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+}
+
+/* 🔹 Highlight Today's Date */
+.react-datepicker__day--today {
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+}
+
+/* 🔹 Navigation Buttons */
+.react-datepicker__navigation {
+    top: 12px;
+}
+

@@ -1,0 +1,310 @@
+/* 🌟 Dashboard Main Container */
+.dashboard {
+    text-align: center;
+    font-family: "Poppins", sans-serif; /* Modern font */
+    padding: 20px;
+    background: linear-gradient(135deg, #1e1e2e, #2a2a40);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🎯 Device Status Styling */
+.device-status {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+}
+
+/* ⚠️ Alert Box */
+.alert-box {
+    background: linear-gradient(45deg, #ff4d4d, #ff0000);
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+/* 📥 Download Buttons */
+.download-buttons {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.download-buttons button {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.download-buttons button:hover {
+    background: linear-gradient(45deg, #0056b3, #003580);
+    transform: scale(1.05);
+}
+
+/* 📊 Chart Containers */
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.chart-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #2c2c3e, #3a3a52);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.chart-container:hover {
+    transform: scale(1.03);
+}
+
+/* 📅 Date Filter */
+.date-filter {
+    margin: 20px 0;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.date-filter label {
+    font-weight: bold;
+    width: 55%;
+    color: white;
+}
+
+/* 📆 Date Picker */
+/* .react-datepicker-wrapper {
+    width: 100%;
+} */
+
+.react-datepicker__input-container input {
+    width: 160px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* .react-datepicker__input-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+} */
+
+/* 📋 Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background: linear-gradient(45deg, #007bff, #003580);
+    color: white;
+    font-weight: bold;
+}
+
+/* 🔥 Button Animations */
+.fil-btn {
+    width: 50%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s ease;
+}
+
+.fil-btn:hover {
+    background: linear-gradient(45deg, #0056b3, #003580);
+    transform: scale(1.05);
+}
+
+/* 📌 Datepicker Customization */
+/* 🔹 Date Picker Main Container */
+.react-datepicker {
+    font-family: "Arial", sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+/* 🔹 Header Styling */
+.react-datepicker__header {
+    background-color: #007bff;
+    color: white;
+    border-bottom: none;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* 🔹 Day Styling */
+.react-datepicker__day {
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* 🔹 Hover Effect on Days */
+.react-datepicker__day:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* 🔹 Selected Day */
+.react-datepicker__day--selected {
+    background-color: #007bff !important;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* 🔹 Today's Date */
+.react-datepicker__day--today {
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+}
+
+/* 🔹 Navigation Buttons */
+.react-datepicker__navigation {
+    top: 12px;
+}
+
+/* 🔹 Left & Right Arrow Buttons */
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+    border: none;
+    background: transparent;
+}
+
+.react-datepicker__navigation--previous:hover,
+.react-datepicker__navigation--next:hover {
+    background-color: rgba(0, 123, 255, 0.196);
+    border-radius: 50%;
+}
+
+/* 🔹 Month and Year Dropdowns */
+.react-datepicker__month-dropdown,
+.react-datepicker__year-dropdown {
+    background-color: rgb(8, 8, 8);
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Month and Year Select Options */
+.react-datepicker__month-option,
+.react-datepicker__year-option {
+    padding: 8px;
+    transition: background 0.2s ease-in-out;
+}
+
+.react-datepicker__month-option:hover,
+.react-datepicker__year-option:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* 🔹 Input Field Styling */
+.react-datepicker__input-container input {
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.react-datepicker__input-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 🌟 Universal Tooltip Styling for All Charts */
+.chart-tooltip {
+    background: rgba(0, 0, 0, 0.734); /* Dark transparent background */
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.058);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Tooltip Arrow */
+/* .chart-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+} */
+
+/* 🔹 Different colors for different chart types */
+.chart-tooltip.temperature {
+    /* background: rgba(255, 99, 71, 0.9); Tomato color for temperature */
+}
+
+.chart-tooltip.humidity {
+    /* background: rgba(30, 144, 255, 0.9); DodgerBlue for humidity */
+}
+
+.chart-tooltip.air-quality {
+    /* background: rgba(34, 139, 34, 0.9); ForestGreen for air quality */
+}
