@@ -231,7 +231,6 @@ const Dashboard = () => {
             // const response = await axios.get("http://localhost:5000/api/sensors");
             // setData(response.data);
 
-            // let url = "http://localhost:5000/api/sensors";
             let url = "http://front-carlee-rohitdhanjee-f6fe86b1.koyeb.app/api/sensors";
             if (startDate && endDate) {
                 const startISO = new Date(startDate).toISOString().split("T")[0] + "T00:00:00.000Z";
