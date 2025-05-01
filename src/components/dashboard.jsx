@@ -212,7 +212,7 @@ const Dashboard = () => {
 
             try {
                 // 🔹 Send Email Alert (Backend API)
-                await axios.post("http://localhost:5000/api/alerts", {
+                await axios.post("http://front-carlee-rohitdhanjee-f6fe86b1.koyeb.app/api/alerts", {
                     type: "Air Quality",
                     value: latestData.air_quality,
                     message: `⚠️ High Air Pollution Detected! AQI: ${latestData.air_quality}`,
