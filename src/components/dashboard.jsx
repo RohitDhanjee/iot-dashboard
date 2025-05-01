@@ -231,12 +231,13 @@ const Dashboard = () => {
             // const response = await axios.get("http://localhost:5000/api/sensors");
             // setData(response.data);
 
-            let url = "http://localhost:5000/api/sensors";
+            // let url = "http://localhost:5000/api/sensors";
+            let url = "http://front-carlee-rohitdhanjee-f6fe86b1.koyeb.app/api/sensors";
             if (startDate && endDate) {
                 const startISO = new Date(startDate).toISOString().split("T")[0] + "T00:00:00.000Z";
                 const endISO = new Date(endDate).toISOString().split("T")[0] + "T23:59:59.999Z";
 
-                url = `http://localhost:5000/api/sensors/filter?start=${startISO}&end=${endISO}`;
+                url = `http://front-carlee-rohitdhanjee-f6fe86b1.koyeb.app/api/sensors/filter?start=${startISO}&end=${endISO}`;
             }
 
             const response = await axios.get(url);
@@ -272,7 +273,7 @@ const Dashboard = () => {
     // Fetch **all** data when exporting
     const fetchAllData = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/api/sensors/all");
+            const response = await axios.get("http://front-carlee-rohitdhanjee-f6fe86b1.koyeb.app/api/sensors/all");
             return response.data; // Return all data
         } catch (error) {
             console.error("Error fetching all sensor data:", error);
